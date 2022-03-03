@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card border text-center row ">
+
+            <div class="card text-white bg-primary col " style="width: 18rem; ">
+            <img class="w-25 "src="${info.image}" alt="">
+            <div class="card-body">
+            
+        <h2>Name:${info.name}</h2>
+        <h5>Brand:${info.brand}</h5>
+        <h2>ReleaseDate:${info.releaseDate}</h2>
+       
+        <h5>Storage:${info.mainFeatures.storage}</h5>
+        <h5>Displaysize:${info.mainFeatures.displaySize}</h5>
+        <h5>Chipset:${info.mainFeatures.chipSet}</h5>
+        <h5>Memory:${info.mainFeatures.memory}</h5>
+        <h5>Sensors:${info.mainFeatures.sensors[0]}</h5>
+            </div>
+          </div>
+           
+            
+          
+     
+            
+            <div class="card text-white bg-primary mb-3 col " style="max-width: 18rem;">
+           <div class="card-header">Others  info</div>
+           <div class="card-body">
+        
+              <h5>WLAN:${info.others.WLAN}</h5>
+               <h5>Bluetooth info:${info.others.Bluetooth}</h5>
+               <h5>GPS:${info.others.GPS}</h5>
+               <h5>NFC:${info.others.NFC}</h5>
+               <h5>Radio:${info.others.Radio}</h5>
+            </div>
+     </div>
+          
+           </div>
+    </div>
+   
+ 
+</body>
+</html>
